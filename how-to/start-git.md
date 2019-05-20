@@ -18,6 +18,12 @@ Git commands must be run from within an initialized git folder or the root path 
 
 `git add --help`
 
+Configure your default e-mail address and name for global usage
+
+`git config --global user.email "daniel@securenetwork.tech"`
+`git config --global user.name "Dan Ferguson"`
+`git config --list`
+
 Cloning remote repository
 
 `git clone https://github.com/danjferguson/devopsbydan.git`
