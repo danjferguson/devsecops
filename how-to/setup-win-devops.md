@@ -18,10 +18,10 @@ Install from within Administrative PowerShell (verify you can run scripts runnin
 
 Reload Administrative PowerShell to run choco commands and install the new software.
 
-`choco install poshgit -y`
-`choco install vscode -y`
-`choco install rsat -y`
-`choco install vmware-powercli-psmodule`
+```powershell
+choco install poshgit -y
+choco install vscode -y
+```
 
 ## VS Code
 
