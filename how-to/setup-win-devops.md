@@ -14,7 +14,7 @@ This document outlines the recommended steps to setup your own Windows DevOps en
 
 Install from within Administrative PowerShell (verify you can run scripts running `Get-ExecutionLevel`)
 
-`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+`Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
 Reload Administrative PowerShell to run choco commands and install the new software.
 
