@@ -43,3 +43,13 @@ The default view has a folder explorer and the document work space. You can acce
 
 On this repository's page click the Clone or download button to get the HTTPS link by clicking the clipboard button:
 ![alt text](https://code.visualstudio.com/Docs "Clone link"
+
+## WSL
+
+If you do not have access to the Microsoft Store, you will need to ![install WSL manually](https://docs.microsoft.com/en-us/windows/wsl/install-manual)
+
+Installing Ubuntu 18.04 LTS via Powershell
+
+`Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile Ubuntu.appx -UseBasicParsing`
+
+Go to the start menu and launch the Ubuntu 18.04 application. Follow the prompts to setup your account.
