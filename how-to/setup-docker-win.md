@@ -2,7 +2,11 @@
 
 How-to setup Docker on Windows 10
 
-## Choco Install
+## Install Docker
+
+Run from administrative powershell window
+
+Use ![Chocolatey Docker packages](https://chocolatey.org/packages?q=docker)
 
 ```powershell
 choco install docker-cli
