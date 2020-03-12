@@ -27,6 +27,7 @@ docker run -t -i ubuntu bash
 Install applications within container
 
 ```bash
-sudo apt install ifconfig
+apt update
+apt install net-tools
 ```
 
