@@ -30,7 +30,7 @@ Basic Bash commands:
 
 * `man {application}` - Manual
 * `ls -la` - List all files/folders
-* `su` - Substitute User
+* `su` - Substitute User (Usually root)
 * `sudo {application}` - Run application with security permissions of the user
 * `hostname` - Hostname of the computer currently logged into
 * `whoami` - Display's currently logged in username
