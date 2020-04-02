@@ -39,3 +39,11 @@ Add multiple files to git tracking (be careful of this option unless you're doin
 Viewing the status of your local copy of the repository.
 
 `git status`
+
+How to load SSH Key.
+
+`eval $(ssh-agent -s)`
+
+Enter SSH Key Password.
+
+`ssh-add`
