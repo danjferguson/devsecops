@@ -10,6 +10,30 @@ This guide is for beginners just getting started using Git for version control. 
 
 This guide assumes you have an understanding of the environment configured in the ![Windows DevOps System Setup](https://github.com/danjferguson/devopsbydan/blob/master/how-to/setup-win-devops.md) guide.
 
+## Authenticating with SSH
+
+Starting each VS session, to avoid having to enter a password each time you git pull and git push, load your SSH Key.How to load SSH Key.
+
+`eval $(ssh-agent -s)`
+
+Next, enter SSH Key Password.
+
+`ssh-add`
+
+## Git Pull, Git Commit and Git Push
+
+First make sure you are root directory of the repository, in this case devopsbydan.
+
+`git pull`
+
+After saving changes (Ctrl S) to file being worked, do a Git Commit, a is for all, m is message-limit yourself 140 char: 
+
+`git commit -a -m "insert commit message here"`
+
+Post these changes to the repository via Git Push: 
+
+`git push`
+
 ## Cheat Sheet
 
 Example commands for using Git with this repository as an example. Replace your own repository address as needed. Examples are done with HTTPS connection. Git follows the logic of the command `git` and the operation (ie `git add`) followed by the options and path you are trying to execute.
@@ -39,11 +63,3 @@ Add multiple files to git tracking (be careful of this option unless you're doin
 Viewing the status of your local copy of the repository.
 
 `git status`
-
-How to load SSH Key.
-
-`eval $(ssh-agent -s)`
-
-Enter SSH Key Password.
-
-`ssh-add`
