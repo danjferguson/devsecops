@@ -34,6 +34,12 @@ Post these changes to the repository via Git Push:
 
 `git push`
 
+## Into to Linux Video
+
+Here is a useful YouTube video on beginning Linux
+
+![SANS Institute - Introduction to Linux](https://www.youtube.com/watch?v=bU3ZnRt5qNk)
+
 ## Cheat Sheet
 
 Example commands for using Git with this repository as an example. Replace your own repository address as needed. Examples are done with HTTPS connection. Git follows the logic of the command `git` and the operation (ie `git add`) followed by the options and path you are trying to execute.
