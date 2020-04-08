@@ -26,9 +26,13 @@ First make sure you are root directory of the repository, in this case devopsbyd
 
 `git pull`
 
-After saving changes (Ctrl S) to file being worked, do a Git Commit, a is for all, m is message-limit yourself 140 char: 
+After saving changes (Ctrl S) to all files you have modified, do a Git Commit, `-a` is for all, `-m` is message (50 character limit)
 
 `git commit -a -m "insert commit message here"`
+
+If you just want to commit a single file you have modified enter the path of the filename instead of the `-a`
+
+`git commit <path-of-file> -m "commit message"`
 
 Post these changes to the repository via Git Push: 
 
