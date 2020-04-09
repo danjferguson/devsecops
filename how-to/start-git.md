@@ -12,13 +12,15 @@ This guide assumes you have an understanding of the environment configured in th
 
 ## Authenticating with SSH
 
-Starting each VS session, to avoid having to enter a password each time you git pull and git push, load your SSH Key.How to load SSH Key.
+Starting each VS session, to avoid having to enter a password each time you git pull and git push, load your SSH Key.
 
 `eval $(ssh-agent -s)`
 
-Next, enter SSH Key Password.
+Next, enter the below that will prompt you for the SSH Key Password.
 
 `ssh-add`
+
+You will see 'Identity added' with a path.
 
 ## Git Pull, Git Commit and Git Push
 
@@ -26,7 +28,7 @@ First make sure you are root directory of the repository, in this case devopsbyd
 
 `git pull`
 
-After saving changes (Ctrl S) to all files you have modified, do a Git Commit, `-a` is for all, `-m` is message (50 character limit)
+After saving changes (Ctrl S) to file being worked, do a Git Commit, a is for all, m is message-limit yourself 50 character length subject: 
 
 `git commit -a -m "insert commit message here"`
 
