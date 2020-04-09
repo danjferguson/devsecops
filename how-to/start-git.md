@@ -28,6 +28,10 @@ First make sure you are root directory of the repository, in this case devopsbyd
 
 `git pull`
 
+Add new files to respository:
+
+`git add <path-to-file>`
+
 After saving changes (Ctrl S) to file being worked, do a Git Commit, a is for all, m is message-limit yourself 50 character length subject: 
 
 `git commit -a -m "insert commit message here"`
