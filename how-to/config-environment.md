@@ -34,6 +34,7 @@ Basic Bash commands:
 * `sudo {application}` - Run application with security permissions of the user
 * `hostname` - Hostname of the computer currently logged into
 * `whoami` - Display's currently logged in username
+* `exit` - Exit the program or user session
 
 #### Dotfiles
 
