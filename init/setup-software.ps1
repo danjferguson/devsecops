@@ -18,6 +18,7 @@ Write-Host -BackgroundColor Black -ForegroundColor Green 'Installing VS Code ext
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.powershell
 code --install-extension davidanson.vscode-markdownlint
+code --install-extension mechatroner.rainbow-csv
 
 Write-Host -BackgroundColor Black -ForegroundColor Green 'Launching VS Code with src folder open'
 
