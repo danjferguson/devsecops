@@ -2,7 +2,7 @@
 
 Find the Kali image on Docker Hub
 
-https://hub.docker.com/r/kalilinux/kali-rolling
+https://hub.docker.com/r/kalilinux/kali
 
 Pull the docker image
 
@@ -43,7 +43,7 @@ Copy the container ID and run the command:
 
 You can run the image as a container now with persistent data within your home folder.
 
-`docker run -ti --rm -v $HOME/kali_root:/root -v /$HOME/postgresql:/var/lib/postgresql my-kali`
+`docker run -ti --rm -v $HOME/kali_root:/root -v $HOME/postgresql:/var/lib/postgresql my-kali`
 
 The `-ti` option will run it interactively, and the `--rm` will delete the container when you are finished so that you don't consume resources on your computer.
 

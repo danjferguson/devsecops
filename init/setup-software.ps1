@@ -2,6 +2,8 @@
 
 Write-Host -BackgroundColor Black -ForegroundColor Green 'Make sure you have installed chocolatey (instructions https://chocolatey.org/install)'
 
+Write-Host -BackgroundColor Black -ForegroundColor Green 'Downloading Ubuntu 18.04LTS'
+
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile Ubuntu.appx -UseBasicParsing
 
 Add-AppxPackage .\Ubuntu.appx
