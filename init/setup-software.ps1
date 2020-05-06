@@ -27,4 +27,4 @@ code --install-extension mechatroner.rainbow-csv
 
 Write-Host -BackgroundColor Black -ForegroundColor Green 'Launching VS Code with src folder open--save your workspace--and restart your computer!'
 
-code folder $HOME/src
+code $HOME/src
