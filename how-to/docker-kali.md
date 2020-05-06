@@ -10,8 +10,41 @@ Pull the docker image
 
 Run Kali image interactively from command line
 
-`docker run -t -i kalilinux/kali`
+`docker run -ti kalilinux/kali`
 
 Start/Stop/Delete Containers from VS code
 
 Attach Shell on container using Docker Extension with VS Code
+
+Update the kali packages and install the tools
+
+```bash
+apt update
+apt dist-upgrade
+apt autoremove
+apt clean
+```
+
+List of metapackages is available here: https://www.kali.org/news/kali-linux-metapackages/
+
+Install the desired metapackages
+
+`apt install kali-linux-full man-db exploitdb`
+
+Exit the kali shell
+
+Find the container ID either by inspecting the container from the VS code GUI or using the docker command line
+
+`docker ps -a`
+
+Copy the container ID and run the command:
+
+`docker commit <container-id> my-kali`
+
+You can run the image as a container now with persistent data within your home folder.
+
+`docker run -ti --rm -v $HOME/kali_root:/root -v /$HOME/postgresql:/var/lib/postgresql my-kali`
+
+The `-ti` option will run it interactively, and the `--rm` will delete the container when you are finished so that you don't consume resources on your computer.
+
+Use the `/root` folder to store your downloads, output files, and other data generated when using the kali container. This will also contain a copy of your bash_history so you can review which commands you have run when using the container.
