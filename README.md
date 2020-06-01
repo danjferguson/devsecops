@@ -1,4 +1,4 @@
-# DevOps by Dan
+# DevSecOps
 
 Instructions for getting started with DevOps tools.
 
