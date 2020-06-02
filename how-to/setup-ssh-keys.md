@@ -8,7 +8,7 @@
 
 ## Ansible
 
-`ssh-keygen -t rsa -b 4096 -C "ansible@chpw.org" -f ~/.ssh/ansible`
+`ssh-keygen -t rsa -b 4096 -C "ansible@organization.com" -f ~/.ssh/ansible`
 
 * Specify the file name for the specific ssh key
 
