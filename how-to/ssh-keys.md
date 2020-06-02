@@ -26,7 +26,17 @@
 
 ### authorized_keys
 
-* Copy the key to the remote host to allow login `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
+This file is located in the user's ssh directory. Use a text editor to view or delete public keys that are authorized to login as the user.
+
+`vi ~/.ssh/authorized_keys`
+
+* Use `cat` to copy public key file contents to to a local authorized_keys file
+
+`cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
+
+* Copy the key to the remote host to allow login `ssh-copy-id`
+
+`ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
 
 ### Caching Credentials
 
