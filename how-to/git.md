@@ -56,7 +56,7 @@ Configure your default e-mail address and name for global usage
 
 Cloning remote repository
 
-`git clone https://github.com/danjferguson/devopsbydan.git`
+`git clone https://github.com/danjferguson/devsecops.git`
 
 Adding individual files to git tracking
 
