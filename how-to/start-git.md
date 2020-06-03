@@ -10,18 +10,6 @@ This guide is for beginners just getting started using Git for version control. 
 
 This guide assumes you have an understanding of the environment configured in the ![Windows DevOps System Setup](https://github.com/danjferguson/devopsbydan/blob/master/how-to/setup-win-devops.md) guide.
 
-## Authenticating with SSH
-
-Starting each VS session, to avoid having to enter a password each time you git pull and git push, load your SSH Key.
-
-`eval $(ssh-agent -s)`
-
-Next, enter the below that will prompt you for the SSH Key Password.
-
-`ssh-add`
-
-You will see 'Identity added' with a path.
-
 ## Git Pull, Git Commit and Git Push
 
 First make sure you are root directory of the repository, in this case devopsbydan.
@@ -60,9 +48,11 @@ Git commands must be run from within an initialized git folder or the root path 
 
 Configure your default e-mail address and name for global usage
 
-`git config --global user.email "daniel@securenetwork.tech"`
-`git config --global user.name "Dan Ferguson"`
-`git config --list`
+* Set your global email address with `git config --global user.email "daniel@securenetwork.tech"`
+
+* Set your global user name with `git config --global user.name "Dan Ferguson"`
+
+* View your global git config with `git config --list`
 
 Cloning remote repository
 
