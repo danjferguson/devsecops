@@ -1,8 +1,8 @@
-# Docker on Windows
+# Docker Install
 
-How-to setup Docker on Windows 10
+How-to install Docker
 
-## Install Docker
+## Windows
 
 Run from administrative powershell window
 
@@ -11,6 +11,19 @@ Use ![Chocolatey Docker packages](https://chocolatey.org/packages?q=docker)
 ```powershell
 choco install docker-cli
 choco install docker-desktop
+```
+
+## Ubuntu
+
+Run from terminal to install prerequisite software, register the Docker repository and install docker-ce
+
+```bash
+sudo apt install apt-transport-https ca-certificates software-properties-common curl
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+apt-cache policy docker-ce
+sudo apt update
+sudo apt install docker-ce
 ```
 
 ## Docker Basics
