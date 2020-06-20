@@ -4,13 +4,13 @@
 
 * Use `hostnamectl` to set the hostname
 
-`sudo hostnamecctl set-hostname new-hostname`
+`sudo hostnamectl set-hostname new-hostname`
 
 * Edit `/etc/hosts` with appropriate hostname
 
 `sudo vi /etc/hosts`
 
-* Verify `cloud-init` package is installed by running `$ls -l /etc/cloud/cloud.cfg`
+* Verify `cloud-init` package is installed by running `ls -l /etc/cloud/cloud.cfg`
 
 * If output shows `cloud.cfg` file details, change the `preserve_hostname` value from `false` to `true`
 
@@ -56,3 +56,10 @@ network:
 
 `sudo netplan apply`
 
+`sudo netplan --debug apply`
+
+## Ansible
+
+After hostname and IP are set, Ansible playbooks will configure baseline settings.
+
+* Add hostname to Ansible hosts file
