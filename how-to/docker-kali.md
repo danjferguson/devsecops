@@ -47,4 +47,4 @@ You can run the image as a container now with persistent data within your home f
 
 The `-ti` option will run it interactively, and the `--rm` will delete the container when you are finished so that you don't consume resources on your computer.
 
-Use the `/root` folder to store your downloads, output files, and other data generated when using the kali container. This will also contain a copy of your bash_history so you can review which commands you have run when using the container.
+Use the `/root` folder in the container to store your downloads, output files, and other data generated, when using the kali container. Make sure to be in your home folder `cd ~` before running commands, such as nmap. This will also contain a copy of your bash_history so you can review which commands you have run when using the container.
