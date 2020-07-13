@@ -2,7 +2,7 @@
 
 Find the Kali image on Docker Hub
 
-https://hub.docker.com/r/kalilinux/kali
+<https://hub.docker.com/r/kalilinux/kali>
 
 Pull the docker image
 
@@ -25,7 +25,7 @@ apt autoremove
 apt clean
 ```
 
-List of metapackages is available here: https://www.kali.org/news/kali-linux-metapackages/
+List of metapackages is available here: <https://www.kali.org/news/kali-linux-metapackages/>
 
 Install the desired metapackages
 
@@ -45,6 +45,6 @@ You can run the image as a container now with persistent data within your home f
 
 `docker run -ti --rm -v $HOME/kali_root:/root my-kali`
 
-The `-ti` option will run it interactively, and the `--rm` will delete the container when you are finished so that you don't consume resources on your computer. The `-v` means in docker an volume option. The `$HOME` is understood to mean no matter where you are running the command from, on the right of the colon is your folder locaton on your host computer and on the left side is the folder on the container.
+The `-ti` option will run it interactively, and the `--rm` will delete the container when you are finished so that you don't consume resources on your computer. The `-v` means volume option. The `$HOME` is understood to mean no matter where you are running the command from. On the right of the colon is your folder locaton on your host computer and on the left side is the folder on the container.
 
 Use the `/root` folder in the container to store your downloads, output files, and other data generated, when using the kali container. Make sure to be in your home folder `cd ~` before running commands, such as nmap. This will also contain a copy of your bash_history so you can review which commands you have run when using the container.
