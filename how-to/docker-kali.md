@@ -43,8 +43,8 @@ Copy the container ID and run the command:
 
 You can run the image as a container now with persistent data within your home folder.
 
-`docker run -ti --rm -v $HOME/kali_root:/root -v $HOME/postgresql:/var/lib/postgresql my-kali`
+`docker run -ti --rm -v $HOME/kali_root:/root my-kali`
 
-The `-ti` option will run it interactively, and the `--rm` will delete the container when you are finished so that you don't consume resources on your computer.
+The `-ti` option will run it interactively, and the `--rm` will delete the container when you are finished so that you don't consume resources on your computer. The `-v` means in docker an volume option. The `$HOME` is understood to mean no matter where you are running the command from, on the right of the colon is your folder locaton on your host computer and on the left side is the folder on the container.
 
 Use the `/root` folder in the container to store your downloads, output files, and other data generated, when using the kali container. Make sure to be in your home folder `cd ~` before running commands, such as nmap. This will also contain a copy of your bash_history so you can review which commands you have run when using the container.
