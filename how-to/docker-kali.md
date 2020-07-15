@@ -26,6 +26,7 @@ apt clean
 ```
 
 List of metapackages is available here: <https://www.kali.org/news/kali-linux-metapackages/>
+`apt-get update && apt-cache search kali-linux`
 
 Install the desired metapackages
 
