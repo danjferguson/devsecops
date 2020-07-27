@@ -20,7 +20,7 @@ Install from within Administrative PowerShell (verify you can run scripts runnin
 
 Run below from your home directory from an Administrative Powershell:
 
-`Invoke-WebRequest -Uri https://github.com/danjferguson/devsecops/blob/master/init/setup-software.ps1 -OutFile setup-software.ps1 -usebasicparsing`
+`Invoke-WebRequest -Uri https://raw.githubusercontent.com/danjferguson/devsecops/master/init/setup-software.ps1 -OutFile setup-software.ps1 -usebasicparsing`
 
 ## VS Code
 
