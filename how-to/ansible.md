@@ -18,7 +18,7 @@ sudo apt install ansible
 
 * Specify Python3 to avoid compatibility problems by adding the following section
 
-```
+```bash
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
 ```
